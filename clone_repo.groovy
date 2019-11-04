@@ -17,7 +17,6 @@ node('master') {
 
 // Stage 1
 	stage('Git_Checkout Stage') {
-	if (DEBUG) {input 'Start Git Checkout?'}
 		try {
 				dir('Demo'){
 				result = checkout(
