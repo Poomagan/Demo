@@ -33,8 +33,10 @@ node('master') {
 						]]
 					]
 				)
-				}
-			} 
+				} 
+			} catch(Exception ex) {
+				throw ex
+			}
 		try {
 				dir('Demo_2'){
 				result = checkout(
@@ -51,7 +53,9 @@ node('master') {
 					]
 				)
 				}
-			} 
+			} catch(Exception ex) {
+				throw ex
+			}
 	}
 
 }
