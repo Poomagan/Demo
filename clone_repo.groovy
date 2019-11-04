@@ -34,11 +34,7 @@ node('master') {
 					]
 				)
 				}
-			} catch(MultipleFailureException ex) {
-				throw ex
-			} catch(Exception ex) {
-				throw ex
-			}
+			} 
 		try {
 				dir('Demo_2'){
 				result = checkout(
@@ -55,11 +51,7 @@ node('master') {
 					]
 				)
 				}
-			} catch(MultipleFailureException ex) {
-				throw ex
-			} catch(Exception ex) {
-				throw ex
-			}
+			} 
 	}
 
 }
